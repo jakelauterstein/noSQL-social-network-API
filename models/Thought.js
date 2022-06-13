@@ -28,7 +28,7 @@ const ReactionSchema = new Schema(
       getters: true
     }
   }
-),
+);
 
 const ThoughtSchema = new Schema({
   thoughtText: {
@@ -64,6 +64,10 @@ ThoughtSchema.virtual('reactionCount').get(function() {
 
 // create the Thought model using the ThoughtSchema
 const Thought = model('Thought', ThoughtSchema);
+
+
+
+
 
   // export the User model
   module.exports = Thought;
